@@ -7,5 +7,4 @@ def render_ascii_grid(agent_pos, goal_pos, obstacles, size=5):
         grid[r][c] = "X"
     grid[goal_pos[0]][goal_pos[1]] = "G"
     grid[agent_pos[0]][agent_pos[1]] = "A"
-    return "
-".join(" ".join(row) for row in grid)
+    return "\n".join(" ".join(row) for row in grid)

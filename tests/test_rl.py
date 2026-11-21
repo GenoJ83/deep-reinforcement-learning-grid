@@ -1,3 +1,5 @@
+import pytest
+pytest.importorskip("torch")
 """Unit tests for GridWorld transitions, replay buffer, and Bellman targets."""
 import torch
 from src.environment.grid_world import GridWorldEnv

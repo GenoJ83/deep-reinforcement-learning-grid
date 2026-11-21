@@ -1,3 +1,5 @@
+import pytest
+pytest.importorskip("torch")
 """Tests for Dueling DQN."""
 import torch
 from src.agents.dueling_dqn import DuelingQNetwork
